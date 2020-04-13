@@ -1,0 +1,15 @@
+{
+  "name": "interview-tasks/php-ffmpeg",
+  "description": "Interview Task PHP FFMPEG",
+  "keywords": [],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=7.4.0",
+    "ext-json": "*",
+    "ext-redis": "5.*",
+    "ext-sodium": "*",
+    "ext-zip": "*",
+    "php-ffmpeg/php-ffmpeg": "^0.15.0"
+  }
+}

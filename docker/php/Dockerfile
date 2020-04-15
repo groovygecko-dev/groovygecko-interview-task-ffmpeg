@@ -5,8 +5,10 @@ ENV PHPREDIS_SHA256="6b054e1c944f0c415a3489cf6ac94d5423b2b506d8c36ac7a8cdd965a1c
 
 RUN apt-get update -y \
 # Install dependencies
-&& apt-get install -y \
+ && apt-get install -y \
+        # FFMPEG
         ffmpeg \
+        libavcodec-extra \
         # php-zip extension
         zlib1g-dev \
         libzip-dev \

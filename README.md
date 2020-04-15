@@ -4,6 +4,8 @@
 
 ### Installation steps
 
+#### Docker
+
 Install Docker https://docs.docker.com/get-docker/
 
 note: if you are using Linux, you need to additionally install docker-compose
@@ -19,3 +21,9 @@ Once this is complete, you will be able to open http://localhost:8081 in your br
 note: If you are using port 8081 for another project, you can change this by editing line 12 `docker-compose.yml` and then executing `docker-compose up -d` to load the changes.
 
 To stop the project, run `docker-compose down`
+
+#### Composer
+
+To install PHP dependencies using composer, you need to have `docker-compose up -d` running.
+
+`composer` is run inside the PHP docker container. `composer install` and can be run with `docker-compose exec phpfpm composer install`.
